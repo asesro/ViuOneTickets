@@ -5,28 +5,31 @@
     <title>.:: ViuOne Tickets ::.</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
-    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- Font Awesome Icons -->
-    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- Ionicons -->
-    <link href="/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/ionicons.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="/assets/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/dist/css/AdminLTE.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
           page. However, you can choose any other skin. Make sure you
           apply the skin class to the body tag so the changes take effect.
     -->
-    <link href="/assets/dist/css/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/dist/css/skins/skin-blue.min.css')}}" rel="stylesheet" type="text/css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+    <!--[if lt IE 9]>-->
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <link href="/assets/css/summernote.css" rel="stylesheet">
-    <link href="/assets/css/dataTables.bootstrap.css" rel="stylesheet">
-    <link href="/assets/css/codemirror.min.css" rel="stylesheet">
-    <link href="/assets/css/monokai.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/css/summernote.css')}}">
+    <!--<link href="/assets/css/dataTables.bootstrap.css" rel="stylesheet">-->
+    <link href="{{ asset('assets/css/dataTables.bootstrap.css')}}" rel="stylesheet">
+    {{--<link href="/assets/css/codemirror.min.css" rel="stylesheet">--}}
+    <link href="{{ asset('assets/css/codemirror.min.css')}}" rel="stylesheet">
+    {{--<link href="/assets/css/monokai.min.css" rel="stylesheet">--}}
+    <link href="{{ asset('assets/css/monokai.min.css')}}" rel="stylesheet">
     <![endif]-->
 </head>
 <body class="skin-blue sidebar-mini">
@@ -69,7 +72,7 @@
                                         <a href="#">
                                             <div class="pull-left">
                                                 <!-- User Image -->
-                                                <img src="/assets/dist/img/avatar.png" class="img-circle" alt="User Image"/>
+                                                <img src="{{ asset('assets/dist/img/avatar.png')}}" class="img-circle" alt="User Image"/>
                                             </div>
                                             <!-- Message title and timestamp -->
                                             <h4>
@@ -152,14 +155,14 @@
                         <!-- Menu Toggle Button -->
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <!-- The user image in the navbar-->
-                            <img src="/assets/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                            <img src="{{ asset('assets/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image"/>
                             <!-- hidden-xs hides the username on small devices so only the image appears. -->
                             <span class="hidden-xs" >{{ Auth::user()->name }}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- The user image in the menu -->
                             <li class="user-header">
-                                <img src="/assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                <img src="{{ asset('assets/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image" />
                                 <p>
                                     {{--Usuario - Web Developer--}}
                                     <small>Keep It Simple</small>
@@ -224,9 +227,9 @@
                         <i class="fa fa-book"></i> <span>Tickets</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="/tickets"><i class="fa fa-circle-o"></i> Listar Tickets Abiertos</a></li>
-                        <li><a href="/tickets/complete"><i class="fa fa-circle-o"></i> Listar Tickets Cerrados</a></li>
-                        <li><a href="/tickets/create"><i class="fa fa-circle-o"></i>Ingresar Tickets</a></li>
+                        <li><a href="{{ url('tickets')}}"><i class="fa fa-circle-o"></i> Listar Tickets Abiertos</a></li>
+                        <li><a href="{{ url('tickets/complete')}}"><i class="fa fa-circle-o"></i> Listar Tickets Cerrados</a></li>
+                        <li><a href="{{ url('tickets/create')}}"><i class="fa fa-circle-o"></i> Ingresar Tickets</a></li>
                         {{--<li><a href="/contenidos"><i class="fa fa-circle-o"></i>Asignar Tickets</a></li>--}}
                         {{--<li><a href="index2.html"><i class="fa fa-circle-o"></i>Seguimiento Tickets</a></li>--}}
                     </ul>
@@ -238,7 +241,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="#"><i class="fa fa-circle-o"></i> Listar Sucursales</a></li>
-                        <li><a href="#"><i class="fa fa-circle-o"></i>Ingresar Tickets</a></li>
+                        <li><a href="#"><i class="fa fa-circle-o"></i> Actualizar Sucursales</a></li>
                         {{--<li><a href="/contenidos"><i class="fa fa-circle-o"></i>Asignar Tickets</a></li>--}}
                         {{--<li><a href="index2.html"><i class="fa fa-circle-o"></i>Seguimiento Tickets</a></li>--}}
                     </ul>
@@ -344,13 +347,13 @@
 </div><!-- ./wrapper -->
 
 
-<script src="/assets/js/jquery.min.js"></script>
+<script src="{{asset('assets/js/jquery.min.js')}}"></script>
 <!-- JavaScripts -->
 
-<script src="/assets/js/jquery.dataTables.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/dataTables.bootstrap.js"></script>
-<script src="/assets/js/dataTables.responsive.min.js"></script>
+<script src="{{asset('assets/js/jquery.dataTables.min.js')}}"></script>
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('assets/js/dataTables.bootstrap.js')}}"></script>
+<script src="{{asset('assets/js/dataTables.responsive.min.js')}}"></script>
 <script>
     $( ".deleteit" ).click(function( event ) {
         event.preventDefault();
@@ -375,11 +378,11 @@
 {{--<script src="/assets/plugins/datatables/jquery.dataTables.min.js" type="text/javascript"></script>--}}
 {{--<script src="/assets/plugins/datatables/dataTables.bootstrap.min.js" type="text/javascript"></script>--}}
 <!-- SlimScroll -->
-<script src="/assets/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="{{asset('assets/plugins/slimScroll/jquery.slimscroll.min.js')}}" type="text/javascript"></script>
 <!-- FastClick -->
-<script src='/assets/plugins/fastclick/fastclick.min.js'></script>
+<script src="{{asset('assets/plugins/fastclick/fastclick.min.js')}}" type="text/javascript"></script>
 <!-- AdminLTE App -->
-<script src="/assets/dist/js/app.min.js" type="text/javascript"></script>
+<script src="{{asset('assets/dist/js/app.min.js')}}" type="text/javascript"></script>
 
 @yield('scripts')
 
