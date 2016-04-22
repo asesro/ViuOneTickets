@@ -81,18 +81,18 @@ return [
   'agent-index-create-new'        => 'Agregar usuarios',
   'agent-create-title'            => 'Agregar usuario',
   'agent-create-add-agents'       => 'Agregar usuarios',
-  'agent-create-no-users'         => 'There are no user accounts, create user accounts first.',
-  'agent-create-select-user'      => 'Select user accounts to be added as agents',
+  'agent-create-no-users'         => 'No hay cuentas de usuario, debe crear una primero.',
+  'agent-create-select-user'      => 'Seleccione cuenta de usuario para ser agregada',
 
 // tickets-admin/administrators/____
-  'administrator-index-title'                   => 'Administrator Management',  //new
-  'btn-create-new-administrator'                => 'Create new administrator',  //new
-  'administrator-index-no-administrators'       => 'There are no administrators, ',  //new
-  'administrator-index-create-new'              => 'Add administrators',  //new
-  'administrator-create-title'                  => 'Add Administrator',  //new
-  'administrator-create-add-administrators'     => 'Add Administrators',  //new
+  'administrator-index-title'                   => 'Administracion de administradores',  //new
+  'btn-create-new-administrator'                => 'Crear nuevo administrador',  //new
+  'administrator-index-no-administrators'       => 'No hay administradores, ',  //new
+  'administrator-index-create-new'              => 'Agregar administradores',  //new
+  'administrator-create-title'                  => 'Agregar administrador',  //new
+  'administrator-create-add-administrators'     => 'Agregar administradores',  //new
   'administrator-create-no-users'               => 'There are no user accounts, create user accounts first.',  //new
-  'administrator-create-select-user'            => 'Select user accounts to be added as administrators',  //new
+  'administrator-create-select-user'            => 'Seleccione cuenta de usuario para ser agregada como Administrador',  //new
 
 // tickets-admin/category/____
   'category-index-title'          => 'Administracion de categorias',

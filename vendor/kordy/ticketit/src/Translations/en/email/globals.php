@@ -2,10 +2,10 @@
 
 return [
 
-    'assigned'    => 'Ticket Assigned',
-    'comment'     => 'New Comment',
-    'status'      => 'Status Changed',
-    'transfer'    => 'Ticket Transferred',
-    'view-ticket' => 'Click here to view your ticket.',
+    'assigned'    => 'Ticket asignado',
+    'comment'     => 'Nuevo comentario',
+    'status'      => 'Estado ha cambiado',
+    'transfer'    => 'Ticket transferido',
+    'view-ticket' => 'Click aqui para ver sus tickets.',
 
 ];

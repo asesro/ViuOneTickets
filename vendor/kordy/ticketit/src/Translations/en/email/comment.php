@@ -3,8 +3,8 @@
 return [
 
 'data' => '
-	<b>:name</b> commented on ticket: <b>:subject</b><br>
-	<b>Ticket category:</b> :category - <b>status:</b> :status<br>
+	<b>:name</b> ticket comentado: <b>:subject</b><br>
+	<b>Categoria de ticket:</b> :category - <b>Estado:</b> :status<br>
 	<br>
 	<div><b>:comment</b></div><br>
 ',
