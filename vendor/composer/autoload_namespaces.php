@@ -12,6 +12,8 @@ return array(
     'PHPExcel' => array($vendorDir . '/phpoffice/phpexcel/Classes'),
     'Mockery' => array($vendorDir . '/mockery/mockery/library'),
     'Maatwebsite\\Excel\\' => array($vendorDir . '/maatwebsite/excel/src'),
+    'Laracasts\\Flash' => array($vendorDir . '/laracasts/flash/src'),
+    'Jlapp\\Swaggervel' => array($vendorDir . '/jlapp/swaggervel/src'),
     'JakubOnderka\\PhpConsoleHighlighter' => array($vendorDir . '/jakub-onderka/php-console-highlighter/src'),
     'JakubOnderka\\PhpConsoleColor' => array($vendorDir . '/jakub-onderka/php-console-color/src'),
     'HTMLPurifier' => array($vendorDir . '/ezyang/htmlpurifier/library'),
