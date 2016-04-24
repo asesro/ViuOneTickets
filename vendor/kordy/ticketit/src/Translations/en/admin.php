@@ -10,7 +10,7 @@ return [
   'nav-dashboard'                 => 'Tablero',
   'nav-categories'                => 'Categorias',
   'nav-priorities'                => 'Prioridades',
-  'nav-statuses'                  => 'Estatos',
+  'nav-statuses'                  => 'Estados',
   'nav-configuration'             => 'Configuration',
   'nav-administrator'             => 'Administrator',  //new
 

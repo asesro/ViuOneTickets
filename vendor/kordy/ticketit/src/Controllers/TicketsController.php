@@ -145,6 +145,7 @@ class TicketsController extends Controller
         $complete = true;
 
         return view('ticketit::index', compact('complete'));
+
     }
 
     /**

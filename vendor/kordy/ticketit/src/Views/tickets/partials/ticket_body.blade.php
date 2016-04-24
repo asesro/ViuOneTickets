@@ -57,7 +57,7 @@
                             <p>
                                 <strong>{{ trans('ticketit::lang.status') }}</strong>{{ trans('ticketit::lang.colon') }}
                                 @if( $ticket->isComplete() && ! $setting->grab('default_close_status_id') )
-                                    <span style="color: blue">Complete</span>
+                                    <span style="color: blue">Completado</span>
                                 @else
                                     <span style="color: {{ $ticket->status->color }}">{{ $ticket->status->name }}</span>
                                 @endif
