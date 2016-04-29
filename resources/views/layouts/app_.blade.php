@@ -23,6 +23,7 @@
     <!--[if lt IE 9]>-->
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="{{asset('assets/js/jquery.min.js')}}"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/summernote.css')}}">
     <!--<link href="/assets/css/dataTables.bootstrap.css" rel="stylesheet">-->
     <link href="{{ asset('assets/css/dataTables.bootstrap.css')}}" rel="stylesheet">
@@ -31,6 +32,7 @@
     {{--<link href="/assets/css/monokai.min.css" rel="stylesheet">--}}
     <link href="{{ asset('assets/css/monokai.min.css')}}" rel="stylesheet">
     <![endif]-->
+    @yield('header')
 </head>
 <body class="skin-blue sidebar-mini">
 <div class="wrapper">
@@ -240,7 +242,7 @@
                         <i class="fa fa-book"></i> <span>Sucursales</span> <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="#"><i class="fa fa-circle-o"></i> Listar Sucursales</a></li>
+                        <li><a href="{!! route('sucursals.index') !!}"><i class="fa fa-circle-o"></i> Listar Sucursales</a></li>
                         <li><a href="#"><i class="fa fa-circle-o"></i> Actualizar Sucursales</a></li>
                         {{--<li><a href="/contenidos"><i class="fa fa-circle-o"></i>Asignar Tickets</a></li>--}}
                         {{--<li><a href="index2.html"><i class="fa fa-circle-o"></i>Seguimiento Tickets</a></li>--}}
@@ -347,7 +349,7 @@
 </div><!-- ./wrapper -->
 
 
-<script src="{{asset('assets/js/jquery.min.js')}}"></script>
+{{--<script src="{{asset('//code.jquery.com/jquery-1.10.2.js')}}"></script>--}}
 <!-- JavaScripts -->
 
 <script src="{{asset('assets/js/jquery.dataTables.min.js')}}"></script>

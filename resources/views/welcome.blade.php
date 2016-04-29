@@ -15,3 +15,7 @@
     </div>
 </div>
 @endsection
+
+{{--@section('footer')--}}
+    {{--<script src="{{asset('assets/js/jquery.min.js')}}"></script>--}}
+{{--@endsection--}}
