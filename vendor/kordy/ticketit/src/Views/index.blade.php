@@ -17,7 +17,7 @@
 	<script src="//cdn.datatables.net/responsive/1.0.7/js/dataTables.responsive.min.js"></script>
 	<script>
 	    $('.table').DataTable({
-	        processing: true,
+	        processing: false,
 	        serverSide: true,
 	        responsive: true,
         	lengthMenu: {{ json_encode($setting->grab('length_menu')) }},

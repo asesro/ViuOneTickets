@@ -2,6 +2,16 @@
 
 return [
 
+    'driver' => 'mailgun',
+    'host' => 'smtp.mailgun.org',
+    'port' => 587,
+    'from' => array('address' => 'administrador@ViuOneTickets.com', 'name' => 'Administrador'),
+    'encryption' => 'tls',
+    //'username' => 'postmaster@sandbox7c52c5525e3844e5a76db197c9953bc6.mailgun.org',
+    //'password' => 'ce3fd208f2b1e06da8d67abbe750b6ba',
+    'sendmail' => '/usr/sbin/sendmail -bs',
+    'pretend' => false
+
     /*
     |--------------------------------------------------------------------------
     | Mail Driver
@@ -16,7 +26,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    //'driver' => env('MAIL_DRIVER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +39,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    //'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +52,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    //'port' => env('MAIL_PORT', 587),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,7 +65,7 @@ return [
     |
     */
 
-    'from' => ['address' => null, 'name' => null],
+    //'from' => ['address' => null, 'name' => null],
 
     /*
     |--------------------------------------------------------------------------
@@ -68,7 +78,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    //'encryption' => env('MAIL_ENCRYPTION', 'tls'),
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +91,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    //'username' => env('MAIL_USERNAME'),
 
     /*
     |--------------------------------------------------------------------------
@@ -94,7 +104,7 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD'),
+    //'password' => env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------
@@ -107,6 +117,6 @@ return [
     |
     */
 
-    'sendmail' => '/usr/sbin/sendmail -bs',
+    //'sendmail' => '/usr/sbin/sendmail -bs',
 
 ];
